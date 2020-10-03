@@ -1,0 +1,10 @@
+---
+# Ansible Core: Install roles from Best Buy Ansible Galaxy
+# ansible-galaxy install -r requirements.yml
+# Ansible Tower: Roles will be solved automatically by Tower
+# Add an entry per role:
+
+- name: galaxy_ansible-role-java
+  scm: git
+  src: ssh://git@bitbucketdev.ca.bestbuy.com:7999/bbyg/galaxy_ansible-role-java.git
+  version: master
