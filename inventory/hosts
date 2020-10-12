@@ -1,8 +1,16 @@
 [local]
-localhost
+localhost       ansible_connection=local
 
-[dev]
+[all-servers]localhost  ansible_connection=local
+ansible-node-01
+ansible-node-02
 
-[test]
+[all-nodes]
+ansible-node-01
+ansible-node-02
 
-[prod]
+[node1]
+ansible-node-01
+
+[node2]
+ansible-node-02
