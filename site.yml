@@ -12,6 +12,6 @@
       msg: "Install Java OpenJDK"
     
   - include_role:
-      name: galaxy_ansible-role-java
+      name: ansible-role-java
     vars:
-        - java_packages: '{{ bestbuy_openjdk_packages }}'
+        - java_packages: '{{ openjdk_packages }}'
